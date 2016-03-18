@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>BMW中国</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <img class="logo" src="img/logo.png" />
+    <!-- 图片集 -->
+    <div class="headDiv">
+        <img class="head" src="img/head.jpg" />
+    </div>
+
+    <!--<div style="overflow-x: hidden;height: 10rem">-->
+        <!--<div class="swiper-container">-->
+            <!--<div class="swiper-wrapper">-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="img/head.jpg" />-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="img/picture.jpg" />-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="pagination"></div>-->
+    <!--</div>-->
+    <div id="dateDrive">试驾试乘</div>
+    <div id="newsList">
+        <div class="item">
+            <img class="itemImg" src="img/news/news.jpg" />
+            <p class="itemTitle">宝马CEO康思远 2016年将再发布5款旗舰车</p>
+            <p class="itemInfo">2015年3月1日三亚，宝马集团大中华区总裁兼首席执行官康思远上任后首次在新车发布会上公开亮相，这一天是全新宝马旗舰轿车7系第五款车型730Li的上市。康思远向网通社表示：“全新BMW 730Li是同</p>
+        </div>
+        <div class="item">
+            <img class="itemImg" src="img/news/news1.jpg" />
+            <p class="itemTitle">宝马2016年或国产多款车型 X3/1系三厢等</p>
+            <p class="itemInfo">近日有消息称，宝马将在2016年国产多款车型，其中包括X3、2系运动旅行车和一款全新紧凑级车型，按照目前已知消息看，该车型或为1系三厢版。 X3（进口） 面对来自奥迪Q5和奔驰GLC的压力，宝</p>
+        </div>
+    </div>
+    <div class="moreDiv"><div class="line"></div><div id="moreNews">更多资讯</div></div>
+    <div id="bmw">
+        <div class="themeLeft">
+            <img class="light" src="img/light.png" />
+            <img class="oldCar" src="img/1-oldCar.png" />
+            <div class="history">解读历史<img class="arrowRight" src="img/arrowRight.png"></div>
+        </div>
+        <div class="themeRight">
+            <img class="marketTitle" src="img/1-marketTitle.png" />
+            <img class="marketCar" src="img/1-marketCar.jpg" />
+            <div id="moreAct">更多活动<img class="arrowRight" src="img/arrowRight.png"></div>
+        </div>
+    </div>
+    <div class="cdFrame">
+        <p class="cdTitle">车型展示</p><div class="line"></div>
+    </div>
+    <div class="carList">
+        <div id="activeBg"></div>
+        <div id="lIndex"></div>
+        <div id="rInfo"></div>
+        <p id="num"></p>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/carList.js"></script>
+    <!--<script type="text/javascript" src="js/swiper.min.js"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+//            var mainSwiper= new Swiper('.swiper-container', {
+//                direction: 'horizontal',
+//                loop: true,
+//                pagination: '.pagination',
+////                effect: 'cube',
+//                slideShadows: false,
+//                shadow: false,
+////                shadowOffset: '1px',
+////                autoplay: 4000
+//            });
+
+            $('#dateDrive').click(function(){
+                window.location.href="dateDrive.html";
+            });
+
+            $('.headDiv').click(function(){
+                window.location.href="play.html";
+            });
+
+            $('#bmw').find('.history').click(function(){
+                window.location.href="http://www.bmw.com.cn/cn_mobi/zh/insights/events/pool/100years/overview.html?from=singlemessage&isappinstalled=0#rd";
+            });
+
+            $('#moreNews').click(function(){
+                window.location.href="newsList.html";
+            });
+
+            $('#newsList').find('.item').click(function(){
+                var index=$(this).index();
+                if (index==0) {
+                    window.location.href="newsDetail.html";
+                } else  {
+                    window.location.href="newsDetail1.html";
+                }
+            });
+
+        })
+    </script>
+</body>
+</html>

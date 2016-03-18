@@ -1,0 +1,103 @@
+body {
+    background: url("../img/dateBg.jpg") no-repeat 0 2.5rem;
+    background-size: 100% auto;
+}
+
+.contentFrame {
+    display: block;
+    margin: 1.5rem auto 0;
+    width: 14rem;
+    height: 16rem;
+}
+
+.contentFrame .leftDiv {
+    float: left;
+    width: 4.6rem;
+    font-size: 1rem;
+}
+
+.contentFrame .leftDiv p{
+    font-size: 0.8rem;
+    color: #9a9b9b;
+    margin-top: 0.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.contentFrame .rightDiv {
+    float: right;
+    width: 9.4rem;
+}
+
+form {
+    width: 15rem;
+    font-size: 1rem;
+}
+
+label {
+    float: left;
+    display: inline-block;
+    font-size: 0.8rem;
+    width: 4rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin-top: 0.6rem;
+    color: #9a9b9b;
+}
+
+input,select {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/
+    -webkit-box-sizing: border-box; /*Safari3.2+*/
+    border: none;
+    background-color: #cacfd2;
+    width: 8rem;
+    height: 1.5rem;
+    color: white;
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+    border-radius: 0.15rem;
+}
+
+input {
+    padding-left: 0.2rem;
+    margin-top: 0.7rem;
+}
+
+select {
+    margin-top: 0.7rem;
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+    background: #cacfd2 url(../img/arrowDown.png) no-repeat 7.1rem center;
+    background-size: 0.4rem auto;
+}
+
+.s2 {
+    width: 3.75rem;
+    background-position-x: 2.8rem;
+}
+
+.s3 {
+    width: 3rem;
+    background-position-x: 2.4rem;
+}
+
+.s4 {
+    width: 2rem;
+    background-position-x: 1.2rem;
+}
+
+#submitInfo {
+    width: 8rem;
+    height: 1.5rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 0.5rem;
+    margin-top: 0.7rem;
+    background: #2b72a6 url("../img/arrowRWhite.png") no-repeat 6rem center;
+    border-radius: 0.15rem;
+}

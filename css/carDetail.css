@@ -1,0 +1,318 @@
+.btn {
+    display: inline-block;
+    font-size: 0.6rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: #979b9e;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 2.25rem;
+    border: 0.05rem solid #aeb5bb;
+}
+
+.arrowDown {
+    position: absolute;
+    width: 0.55rem;
+    bottom: 0.8rem;
+    left: 50%;
+    margin-left: -0.275rem;
+}
+
+.signUp {
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1rem;
+    background: url("../img/signUp.png") no-repeat;
+    background-size: 2.3rem auto;
+    border: none;
+    z-index: 3;
+}
+
+#loadingDialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 100;
+}
+
+#loadingDialog img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.page-1-0 .contentFrame {
+    position: absolute;
+    width: 15rem;
+    left: 50%;
+    top: 50%;
+    height: 18rem;
+    margin-left: -7.5rem;
+    margin-top: -10rem;
+    text-align: center;
+}
+
+.page-1-0 .bmw {
+    width: 2.15rem;
+    margin: 0 auto;
+}
+
+.page-1-0 .carName {
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+}
+
+.page-1-0 .carPrice {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #979b9e;
+}
+
+.page-1-0 .car {
+    display: block;
+    margin: 0 auto;
+    width: 14.3rem;
+    height: auto;
+}
+
+.page-1-0 .fnFrame {
+    display: block;
+    margin: 0 auto 0.4rem;
+    width: 12rem;
+}
+
+.page-1-0 .fnFrame td {
+    width: 3rem;
+    height: 3rem;
+}
+
+.page-1-0 .fnFrame .btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.page-2-0 .contentFrame {
+    display: block;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.page-2-0 .item {
+    width: 15rem;
+    height: 3.8rem;
+    border-bottom: 1px solid #dcdddf;
+}
+
+.page-2-0 .itemLeft {
+    float: left;
+    margin-top: 0.8rem;
+    margin-left: 0.5rem;
+    color: #abaeb0;
+}
+
+.page-2-0 .itemLeft .carName {
+    color: #5d5d5d;
+    width: 11rem;
+    font-size: 0.7rem;
+    min-height: 0.8rem;
+    max-height: 1.8rem;
+    margin-top: 0.2rem;
+}
+
+.page-2-0 .itemLeft .price {
+    color: #b63322;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.page-2-0 .itemLeft .guideDiv {
+    color: #b3b6b8;
+    margin-left: 0.3rem;
+    font-size: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.page-2-0 .itemRight {
+    float: right;
+    width: 3rem;
+    height: 2.4rem;
+    margin-top: 1rem;
+    background: url("../img/bestPrice.png") no-repeat center;
+    background-size: 1.375rem auto;
+    border-left: 1px solid #efefef;
+}
+
+.page-2-0 .unlisted {
+    color: #5d5d5d;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.page-2-0 .fp-slidesNav {
+    width: 100%;
+    text-align: center;
+}
+
+.page-3-0 .contentFrame {
+    display: block;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.page-3-0 .item {
+    width: 15rem;
+    height: 4.2rem;
+    border-bottom: 1px solid #dcdddf;
+}
+
+.page-3-0 .item .itemImg {
+    float: left;
+    width: 4rem;
+    height: 2.675rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.page-3-0 .item .itemRight {
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 1rem;
+    height: 2.675rem;
+}
+
+.page-3-0 .item .itemInfo {
+    width: 10rem;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    color: #5d5d5d;
+    min-height: 1.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.page-3-0 .item .time {
+    position: absolute;
+    display: inline-block;
+    color: #b3b6b8;
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.page-3-0 .item .type {
+    position: absolute;
+    display: inline-block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-top: 0.2rem;
+    border: 1px solid #4e72a9;
+    border-radius: 3px;
+    padding: 0 0.2rem;
+    font-size: 0.6rem;
+    color: #4e72a9;
+}
+
+.page-4-0 .themeDiv{
+    width: 16rem;
+    height: 10.6rem;
+    background: url("../img/4-theme.jpg") no-repeat;
+    background-size: 16rem auto;
+    overflow: hidden;
+}
+
+.page-4-0 .themeDiv p{
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    margin-top: 8.6rem;
+    margin-left: 0.5rem;
+}
+
+.page-4-0 .infoDiv {
+    margin-top: 0.4rem;
+    width: 16rem;
+    height: 5.2rem;
+}
+
+.page-4-0 .infoDiv p {
+    line-height: 1rem;
+    font-size: 0.8rem;
+    margin-top: 4rem;
+    margin-left: 0.5rem;
+}
+
+.page-4-0 .infoDiv .leftDiv {
+    float: left;
+    width: 7.8rem;
+    height: 5.2rem;
+    background: url("../img/4-left.jpg") no-repeat;
+    background-size: 7.8rem auto;
+}
+
+.page-4-0 .infoDiv .rightDiv {
+    float: right;
+    width: 7.8rem;
+    height: 5.2rem;
+    background: url("../img/4-right.jpg") no-repeat;
+    background-size: 7.8rem auto;
+}
+
+.page-5-0 table {
+    display: block;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.page-5-0 table tr {
+    display: inline-block;
+    border-bottom: 0.05rem solid #d8dbdb;
+}
+
+.page-5-0 table td {
+    width: 3.75rem;
+    height: 3rem;
+}
+
+.page-5-0 table img {
+    display: block;
+    margin: 0.8rem auto 0.4rem;
+    width: 2.4rem;
+    border-radius: 2.4rem;
+}
+
+.page-5-0 table p {
+    color: #9d9d9d;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    text-align: center;
+    min-height: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+/*  iconDown */
+.pt-page-moveIconUp {
+    -webkit-animation: moveIconUp ease 1.5s both infinite;
+    animation: moveIconUp ease 1.5s both infinite;
+}
+
+@-webkit-keyframes moveIconUp {
+    0% { -webkit-transform: translateY(-100%); opacity:0;}
+    50% { -webkit-transform: translateY(0%); opacity:1;}
+    100% { -webkit-transform: translateY(100%); opacity:0;}
+}
+@keyframes moveIconUp {
+    0% { -webkit-transform: translateY(-100%); transform: translateY(100%); opacity:0;}
+    50% { -webkit-transform: translateY(0%); transform: translateY(0%); opacity:1;}
+    100% { -webkit-transform: translateY(100%); transform: translateY(100%); opacity:0;}
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>BMW中国</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/newsList.css">
+</head>
+<body>
+    <img class="logo" src="img/logo.png" />
+    <div class="themeDiv"></div>
+    <div id="newsList">
+        <div class="item">
+            <img class="itemImg" src="img/news/news.jpg" />
+            <p class="itemTitle">宝马CEO康思远 2016年将再发布5款旗舰车</p>
+            <p class="itemInfo">2015年3月1日三亚，宝马集团大中华区总裁兼首席执行官康思远上任后首次在新车发布会上公开亮相，这一天是全新宝马旗舰轿车7系第五款车型730Li的上市。康思远向网通社表示：“全新BMW 730Li是同</p>
+        </div>
+        <div class="item">
+            <img class="itemImg" src="img/news/news1.jpg" />
+            <p class="itemTitle">宝马2016年或国产多款车型 X3/1系三厢等</p>
+            <p class="itemInfo">近日有消息称，宝马将在2016年国产多款车型，其中包括X3、2系运动旅行车和一款全新紧凑级车型，按照目前已知消息看，该车型或为1系三厢版。 X3（进口） 面对来自奥迪Q5和奔驰GLC的压力，宝</p>
+        </div>
+        <div class="item">
+            <img class="itemImg" src="img/news/news2.jpg" />
+            <p class="itemTitle">BMW或将今年秋季推出7系百年纪念版车型</p>
+            <p class="itemInfo">北京时间3月7日晚上10点，德国BMW集团在德国总部慕尼黑举行了一场规模盛大的庆祝活动，以此来庆祝BMW百年华诞。</p>
+        </div>
+        <div class="item">
+            <img class="itemImg" src="img/news/news3.jpg" />
+            <p class="itemTitle">宝马2系高性能版四月上市 预计65万起售</p>
+            <p class="itemInfo">宝马品牌在2015年10月发布了1系M Coupe的“继任者”——宝马M2 Coupe。这款宝马品牌旗下全新的紧凑型三厢高性能车，即将投放到中国市场当中。</p>
+        </div>
+        <div class="item">
+            <img class="itemImg" src="img/news/news4.jpg" />
+            <p class="itemTitle">宝马M2官方预售65万元 搭3.0T/4.3秒破百</p>
+            <p class="itemInfo">3月10日，宝马官方正式发布了入门级全新双门轿跑车宝马M2的预售价。新车预售65万元，即日起已开始接受预定。</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.item').click(function(){
+                var index=$(this).index();
+                if (index==0) {
+                    window.location.href="newsDetail.html";
+                } else  {
+                    window.location.href="newsDetail"+index +".html";
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

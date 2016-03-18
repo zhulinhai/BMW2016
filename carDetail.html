@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>BMW中国</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!--<link rel="stylesheet" href="css/animate.min.css">-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/carDetail.css">
+</head>
+<body>
+    <div id="loadingDialog" style="display: block">
+        <img src="img/three-dots.svg" width="60" />
+    </div>
+    <div id="fullPage" style="display: none">
+        <div class="section page-1-0">
+            <div class="contentFrame">
+                <img class="bmw" src="img/bmw.png" />
+                <p class="carName" id="carName"></p>
+                <p class="carPrice">厂商指导价: <span id="carPrice"></span></p>
+                <img class="car" id="car" />
+                <table class="fnFrame">
+                    <tr><td><div class="btn" id="price">报价</div></td>
+                        <td><div class="btn" id="evaluating">评测</div></td>
+                        <td><div class="btn" id="picture">图片</div></td>
+                        <td><div class="btn" id="setting">配置</div></td>
+                    </tr>
+                </table>
+            </div>
+            <img class="arrowDown pt-page-moveIconUp" src="img/2-arrowDown.png" />
+        </div>
+        <div class="section page-2-0">
+            <img class="logo" src="img/logo.png" />
+            <div class="topFrame"><p class="themeTitle">车款报价</p></div>
+            <div class="contentFrame"></div>
+            <p class="unlisted" style="display: none">车款未上市,敬请期待!</p>
+            <img class="arrowDown pt-page-moveIconUp" src="img/2-arrowDown.png" />
+        </div>
+        <div class="section page-3-0">
+            <img class="logo" src="img/logo.png" />
+            <div class="topFrame"><p class="themeTitle">评测导购</p></div>
+            <div class="contentFrame">
+                <div class="slide" data-anchor="slide1">
+                    <div class="item">
+                        <img class="itemImg" src="img/160-107.jpg" />
+                        <div class="itemRight">
+                            <p class="itemInfo">评测宝马L四驱版 更多一份安全保障</p>
+                            <label class="type">车型详解</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="itemImg" src="img/160-107b.jpg" />
+                        <div class="itemRight">
+                            <p class="itemInfo">宝马新5系Li购车手册 推荐525L套装版</p>
+                            <label class="type">购车手册</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="itemImg" src="img/160-107c.jpg" />
+                        <div class="itemRight">
+                            <p class="itemInfo">评测宝马L四驱版 更多一份安全保障</p>
+                            <label class="time">2016-03-02</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="itemImg" src="img/160-107c.jpg" />
+                        <div class="itemRight">
+                            <p class="itemInfo">写口碑 送摩托车模型/赛车U盘</p>
+                            <label class="type">推广</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-anchor="slide2">
+                    <div class="item">
+                        <img class="itemImg" src="img/160-107.jpg" />
+                        <div class="itemRight">
+                            <p class="itemInfo">评测宝马L四驱版 更多一份安全保障</p>
+                            <label class="time">2016-03-02</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="arrowDown pt-page-moveIconUp" src="img/2-arrowDown.png" />
+            <div class="btn signUp"></div>
+        </div>
+        <div class="section page-4-0">
+            <img class="logo" src="img/logo.png" />
+            <div class="topFrame"><p class="themeTitle">车型图片</p></div>
+            <div class="themeDiv"><p>外观</p></div>
+            <div class="infoDiv">
+                <div class="leftDiv"><p>内饰</p></div>
+                <div class="rightDiv"><p>空间</p></div>
+            </div>
+            <img class="arrowDown pt-page-moveIconUp" src="img/2-arrowDown.png" />
+            <div class="btn signUp"></div>
+        </div>
+        <div class="section page-5-0">
+            <img class="logo" src="img/logo.png" />
+            <div class="topFrame"><p class="themeTitle">亮点配置</p></div>
+            <table>
+                <tr>
+                    <td><div><img src="img/config/23.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/28.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/30.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/31.png"><p>后排液晶屏晶屏</p></div></td>
+                </tr>
+                <tr>
+                    <td><div><img src="img/config/23.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/28.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/30.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/31.png"><p>后排液晶屏晶屏</p></div></td>
+                </tr>
+                <tr style="border-bottom: none">
+                    <td><div><img src="img/config/23.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/28.png"><p>后排液晶屏</p></div></td>
+                    <td><div><img src="img/config/30.png"><p>后排液晶屏</p></div></td>
+                </tr>
+            </table>
+            <div class="btn signUp"></div>
+        </div>
+    </div>
+    <div id="orientLayer">
+        <div class="contentFrame">
+            <img class="phone rotatePhoneAnimation" src="img/rotatePhone.png" />
+            <p class="tipTitle">为了更好的体验，请使用竖屏浏览</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/pace.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <!--<script type="text/javascript" src="js/move.min.js"></script>-->
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript">
+        PaceOptions = {
+            elements: true
+        };
+
+        Pace.on('hide', function() {
+            $('#loadingDialog').fadeOut(700);
+        });
+
+        $(document).ready(function() {
+            var id =request("id");
+            setCarInfo(id);
+
+            $('#fullPage').show();
+            $('#fullPage').fullpage({
+                verticalCentered: false,
+                controlArrows: false,
+                slidesNavigation: true,
+                recordHistory: false,
+                anchors: ['page1','page2','page3','page4','page5'],
+                afterLoad:function(anchorLink, index){
+
+                },
+                onLeave:function(index, nextIndex, direction) {
+
+                }
+            });
+
+            $('.page-4-0 .themeDiv').click(function(){
+                window.location.href = "pictureList.html#page1";
+            });
+
+            $('.page-4-0 .infoDiv .leftDiv').click(function(){
+                window.location.href = "pictureList.html#page2";
+            });
+
+            $('.page-4-0 .infoDiv .rightDiv').click(function(){
+                window.location.href = "pictureList.html#page3";
+            });
+
+            $('.signUp').click(function(){
+                window.location.href = "dateDrive.html";
+            });
+
+            $('.fnFrame .btn').click(function(){
+                var btnId= $(this).attr("id");
+                switch (btnId) {
+                    case "price":
+                        $.fn.fullpage.moveTo('page2');
+                        break;
+                    case "evaluating":
+                        $.fn.fullpage.moveTo('page3');
+                        break;
+                    case "picture":
+                        $.fn.fullpage.moveTo('page4');
+                        break;
+                    case "setting":
+                        $.fn.fullpage.moveTo('page5');
+                        break;
+                }
+            });
+
+            $('.page-2-0 .itemRight').click(function(){
+                window.location.href = "dateDrive.html";
+            });
+        });
+
+        function setCarInfo(id){
+            if (id=="undefined") return;
+            var index= parseInt(id/10 -1);
+            carList[index].c.forEach(function(e){
+                if (e.id==id) {
+                    $('#carName').html(e.n);
+                    $('#carPrice').html(e.p);
+                    $('#car').attr("src", e.b);
+                    return;
+                }
+            });
+
+            carDetail.forEach(function(e){
+                if (e.id==id) {
+                    var list = e.l;
+                    if (list.length==0) {
+                        $('.unlisted').show();
+                    } else {
+                        var content="";
+                        for (var j=0;j<list.length/4;j++){
+                            var info= "<div class='slide'><div data-anchor='slide"+j+"'></div>";
+                            var num=0;
+                            if (list.length-j*4 >3) {
+                                num=4;
+                            } else {
+                                num=list.length-j*4;
+                            }
+
+                            for (var i=0;i<num;i++) {
+                                info+="<div class='item'><div class='itemLeft'><p class='carName'>";
+                                info+=list[j*4+i].n;
+                                info+="</p><label class='price'>";
+                                info+=list[j*4+i].z/10000 +"万";
+                                info+="</label><label class='guideDiv'>指导价: <span class='guidePrice'>";
+                                info+=list[j*4+i].p/10000 +"万";
+                                info+="</span></label></div><div class='itemRight'></div></div>";
+                            }
+                            content+=info;
+                        }
+                        $('.page-2-0 .contentFrame').html(content);
+                    }
+                    return;
+                }
+            });
+
+        }
+
+        function request(paras){
+            var url = location.search;
+            var paraString = url.substring(url.indexOf("?")+1,url.length).split("&");
+            var paraObj = {}, j;
+            for (var i=0; j=paraString[i]; i++){
+                paraObj[j.substring(0,j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=")+1,j.length);
+            }
+            var returnValue = paraObj[paras.toLowerCase()];
+            if(typeof(returnValue)=="undefined"){
+                return "";
+            }else{
+                return returnValue;
+            }
+        }
+
+    </script>
+</body>
+</html>

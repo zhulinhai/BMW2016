@@ -1,0 +1,47 @@
+.themeDiv {
+    width: 100%;
+    height: 8.4rem;
+    background: url("../img/theme1.jpg") no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+
+#newsList {
+    margin-top: 0.6rem;
+}
+
+#newsList .item {
+    display: block;
+    margin: 0.5rem auto 0.2rem;
+    width: 15rem;
+    min-height: 2.4rem;
+}
+
+#newsList .itemImg {
+    float: left;
+    width: 3.5rem;
+    margin-right: 0.3rem;
+}
+
+#newsList .itemTitle {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+#newsList .itemInfo {
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    margin-top: 0.15rem;
+    color: #686c70;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

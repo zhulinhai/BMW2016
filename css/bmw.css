@@ -1,0 +1,57 @@
+* {padding: 0;margin: 0;}
+body {
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 4.65rem;
+    z-index: 200;
+}
+
+.topFrame {
+    background-color: #f8f8f8;
+    padding-bottom: 0.5rem;
+}
+
+.topFrame  .car {
+    float: left;
+    width: 5rem;
+    margin-top: 1.8rem;
+}
+
+.topFrame .bmw100 {
+    float: right;
+    width: 10.575rem;
+    margin-top: 1.2rem;
+    margin-right: 0.425rem;
+}
+
+.topFrame .chairman {
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.contentFrame {
+    display: block;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.intro {
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    color: black;
+}
+
+.arrowLine {
+    width: 15rem;
+    margin: 0.5rem 0;
+}
+
+.bmwHistory {
+    width: 15rem;
+}

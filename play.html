@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>BMW中国</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            color: white;
+            font-family:Arial,SimSun;
+            background-color: black;
+        }
+        #playVideo {
+            margin-top: 1rem;
+        }
+        .mainTitle {
+            color: white;
+            font-size: 0.8rem;
+            margin: 0.6rem 0.5rem;
+        }
+        .content {
+            color: #929292;
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+            margin: 0.6rem 0.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <video id="playVideo" controls="controls" width="100%" height="auto" src="img/d7781e243a8cf13f-sd.mp4"></video>
+    <p class="mainTitle">宝马VISION NEXT 100</p>
+    <p class="content">简介：宝马集团百年概念车系列的首款作品，BMW VISION NEXT 100造型独特，双肾格栅像两颗大门牙，这款车融合众多高科技设备，几乎达到无人驾驶的境界，并会在今年4月开幕的北京车展上首发。</p>
+
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script>
+        $(document).ready(function () {
+            initVideo();
+        });
+
+        function initVideo() {
+            /*设置视频属性*/
+            var v = document.getElementById('playVideo');
+            v.poster='img/placeHolder.jpg';
+            v.addEventListener('ended',function(){
+                v.poster="img/placeHolder.jpg";
+            },false);
+        }
+    </script>
+
+</body>
+</html>
